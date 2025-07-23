@@ -1,0 +1,286 @@
+/* 
+1em = 16px 
+Icons size = 95px
+
+--FS - Font Size
+
+--clr - Color
+
+*/
+
+:root{
+    --ff: "Kufam", sans-serif;
+
+    --fS-title: 4em;
+    --fS-paragraph: 1.5em;
+    --FS-cards: 2.25em;
+
+    --clr-background-item: #D9D9D9;
+
+    --clr-frontEnd: #6A5BF2;
+    --clr-backEnd: #F25B85;
+    --clr-webDesign: #FF7E43;
+    --clr-workFlow: #8ABE11;
+
+}
+
+*, 
+*:after,
+*:before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+/* ------------------------------------------ */
+/* ESTILOS GERAIS */
+/* ------------------------------------------ */
+body{
+    background-image: url(./src/Dot_Grid_Pattern.svg);
+    font-family: var(--ff);
+}
+
+h1{
+    font-size: var(--fS-title);
+    font-weight: 300;
+}
+
+h3{
+    font-size: 2.25em;
+    font-weight: 400;
+}
+
+p{
+    font-size: var(--fS-paragraph);
+    margin-top: 30px;
+}
+
+a{
+    color: black;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.arrow-down{
+    margin-top: 50px;  
+}
+
+/* ------------------------------------------ */
+/* HEADER */
+/* ------------------------------------------ */
+header{
+    border-bottom: 1px solid black;
+}
+
+nav{
+    display: flex;
+    justify-content: end;
+    gap: 50px;
+    margin: 20px  40px 20px 40px;
+    font-weight: 300;
+    font-size: 1.5em;
+}
+
+
+/* ------------------------------------------ */
+/* ABOUT SECTION */
+/* ------------------------------------------ */
+.about{
+    margin: 70px;
+    min-height: 900px;
+    position: relative;
+}
+
+.about-content{
+    display: flex;
+    gap: 20px;
+}
+
+.about-text{
+    max-width: 800px;
+}
+
+.photo{
+    width: 300px;
+    border-radius: 40%;
+    position: relative; 
+}
+
+ul{
+    display: flex;
+}
+
+li{
+    margin: 30px;
+}
+
+li img{
+    height: 95px;
+    width: 100px;
+}
+
+.about-btns{
+    margin-top: 50px;
+}
+
+/* BTNS */
+.about-btns button{
+    font-size: var(--fS-paragraph);
+    width: 180px;
+    height: 70px;
+
+    margin: 20px;
+
+    border-radius: 20px;
+    border: none;
+    box-shadow: -5px 8px 0px 2px rgba(0,0,0,0.80); 
+
+    cursor: pointer;
+    transition: .2s all;
+}
+
+
+/* ------------------------------------------ */
+/* PROJECTS SECTION */
+/* ------------------------------------------ */
+.projects{
+    margin-top: 100px;
+}
+
+.project-bg{
+    display: block;
+    width: 100%;
+    height: 100px;
+    background-color: var(--clr-background-item);
+    z-index: -1;
+}
+
+.projects-cards{
+    border-radius: 20px;
+    box-shadow: -5px 8px 0px 2px rgba(0,0,0,0.80); 
+    margin-top: 40px;
+    display: flex;
+    height: 500px;
+    max-width: 1500px;
+    
+}
+
+.card{
+    background-color: var(--clr-background-item);
+    box-shadow: -5px 8px 4px 2px rgba(0,0,0,0.20); 
+    padding: 80px;
+    width: 25%;
+    transition: 0.4s all ease-in;
+    cursor: pointer;
+}
+
+.card a:hover{
+    color: white;
+}
+
+.card-img:hover{
+    display: block;
+}
+/* The first and last card must have border radius */
+.card-1{
+    border-radius: 20px 0 0 20px;
+}
+.card-4{
+    border-radius: 0 20px 20px 0;
+}
+
+/* For each card a especific color */
+.card-1:hover{
+    background-color: var(--clr-frontEnd);
+}
+.card-2:hover{
+    background-color: var(--clr-backEnd);
+}
+.card-3:hover{
+    background-color: var(--clr-webDesign);
+}
+.card-4:hover{
+    background-color: var(--clr-workFlow);
+}
+
+
+/* ------------------------------------------ */
+/* CERTIFICATES SECTION */
+/* ------------------------------------------ */
+.certificates-content {
+    margin-top: 100px;
+    max-width: 1100px;
+    text-align: center;
+}
+.certificates-images-container{
+    text-align: center;
+}
+
+.certificates-img{
+    max-width: 400px;
+    padding: 10px;
+    margin-top: 50px;
+    border-radius: 20px;
+    transition: 0.2s all ease-in;
+}
+
+.backend-img:hover{
+    background-color: var(--clr-backEnd);
+}
+.frontend-img:hover{
+    background-color: var(--clr-frontEnd);
+}
+.workglow-img:hover{
+    background-color: var(--clr-workFlow);
+}
+.webDesign-img:hover{
+    background-color: var(--clr-webDesign);
+}
+
+/* ------------------------------------------ */
+/* CONTACT SECTION */
+/* ------------------------------------------ */
+.contact-content{
+    margin-top: 100px;
+}
+.contact-icon{
+    margin-top: 20px;
+    width: 100px;
+}
+
+/* ------------------------------------------ */
+/* FOOTER SECTION */
+/* ------------------------------------------ */
+
+footer{
+    display: flex;
+    justify-content: center;
+    gap: 400px;
+    margin-top: 100px;
+    background: var(--clr-background-item);
+    padding: 20px;
+}
+.footer-right{
+    display: flex;
+    flex-direction: column;
+    text-align: end;
+}
+footer p {
+    margin: 0;
+    font-size: 1.25em;
+}
+
+footer img{
+    width: 50px;
+}
+
+footer span{
+    font-weight: 700;
+}
+
