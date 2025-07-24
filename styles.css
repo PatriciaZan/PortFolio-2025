@@ -75,14 +75,18 @@ a{
 /* HEADER */
 /* ------------------------------------------ */
 header{
-    border-bottom: 1px solid black;
+    background-image: url(./src/Dot_Grid_Pattern.svg);
+    border-bottom: 1px solid rgb(158, 158, 158);
+    padding: 25px;
+    position: sticky;
+    top: 0;
+    z-index: 999;
 }
 
 nav{
     display: flex;
-    justify-content: end;
+    justify-content: center;
     gap: 50px;
-    margin: 20px  40px 20px 40px;
     font-weight: 300;
     font-size: 1.5em;
 }
@@ -145,6 +149,21 @@ li img{
     transition: .2s all;
 }
 
+#btn-frontend:hover{
+    background-color: var(--clr-frontEnd);
+}
+
+#btn-backend:hover{
+    background-color: var(--clr-backEnd);
+}
+
+#btn-workflow:hover{
+    background-color: var(--clr-workFlow);
+}
+
+#btn-webdesign:hover{
+    background-color: var(--clr-webDesign);
+}
 
 /* ------------------------------------------ */
 /* PROJECTS SECTION */
@@ -251,7 +270,16 @@ li img{
 }
 .contact-icon{
     margin-top: 20px;
-    width: 100px;
+    width: 120px;
+}
+.contact-ways-container{
+    display: flex;
+    gap: 40px;
+}
+
+.ways-card{
+    text-align: center;
+    max-width: 500px;
 }
 
 /* ------------------------------------------ */
@@ -261,16 +289,19 @@ li img{
 footer{
     display: flex;
     justify-content: center;
-    gap: 400px;
+    align-items: center;
     margin-top: 100px;
+}
+
+.footer-content{
     background: var(--clr-background-item);
-    padding: 20px;
+    padding: 90px 0 20px 0;
+    width: 1500px;
+    max-width: 1500px;
+    border-radius: 20px 20px 0 0;
+    box-shadow: -5px 8px 0px 2px rgba(0,0,0,0.80); 
 }
-.footer-right{
-    display: flex;
-    flex-direction: column;
-    text-align: end;
-}
+
 footer p {
     margin: 0;
     font-size: 1.25em;
@@ -278,9 +309,5 @@ footer p {
 
 footer img{
     width: 50px;
-}
-
-footer span{
-    font-weight: 700;
 }
 

@@ -1,0 +1,81 @@
+*, 
+*:after,
+*:before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+:root{
+    --ff: "Kufam", sans-serif;
+
+    --fS-title: 4em;
+    --fS-paragraph: 1.5em;
+    --FS-cards: 2.25em;
+
+    --clr-background-item: #D9D9D9;
+
+    --clr-frontEnd: #6A5BF2;
+    --clr-backEnd: #F25B85;
+    --clr-webDesign: #FF7E43;
+    --clr-workFlow: #8ABE11;
+
+}
+
+body{
+    background-image: url(../src/Dot_Grid_Pattern.svg);
+    font-family: var(--ff);
+}
+
+
+h1{
+    font-size: var(--fS-title);
+    font-weight: 300;
+}
+
+h3{
+    font-size: 2.25em;
+    font-weight: 400;
+}
+
+p{
+    font-size: var(--fS-paragraph);
+    margin-top: 30px;
+}
+
+a{
+    color: black;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.arrow-down{
+    margin-top: 50px;  
+}
+
+/* ------------------------------------------ */
+/* HEADER */
+/* ------------------------------------------ */
+header{
+    background-image: url(../src/Dot_Grid_Pattern.svg);
+    border-bottom: 1px solid rgb(158, 158, 158);
+    padding: 25px;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    font-weight: 300;
+    font-size: 1.5em;
+}
