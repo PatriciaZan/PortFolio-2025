@@ -21,7 +21,6 @@ Icons size = 95px
     --clr-backEnd: #F25B85;
     --clr-webDesign: #FF7E43;
     --clr-workFlow: #8ABE11;
-
 }
 
 *, 
@@ -39,7 +38,13 @@ Icons size = 95px
 body{
     background-image: url(./src/Dot_Grid_Pattern.svg);
     font-family: var(--ff);
+    cursor: url('./src/Icons/Page/Cursor_full.png'), auto;
 }
+
+a{
+    cursor: url('./src/Icons/Page/Cursor_click.png'),auto;
+}
+
 
 h1{
     font-size: var(--fS-title);
@@ -82,7 +87,6 @@ header{
     top: 0;
     z-index: 999;
 }
-
 nav{
     display: flex;
     justify-content: center;
@@ -90,7 +94,18 @@ nav{
     font-weight: 300;
     font-size: 1.5em;
 }
-
+#a-about:hover{
+    box-shadow: 0px 2px 0px 0px var(--clr-frontEnd);
+}
+#a-certificates:hover{
+    box-shadow: 0px 2px 0px 0px var(--clr-backEnd);
+}
+#a-projects:hover{
+    box-shadow: 0px 2px 0px 0px var(--clr-workFlow);
+}
+#a-contact:hover{
+    box-shadow: 0px 2px 0px 0px var(--clr-webDesign);
+}
 
 /* ------------------------------------------ */
 /* ABOUT SECTION */
@@ -145,7 +160,7 @@ li img{
     border: none;
     box-shadow: -5px 8px 0px 2px rgba(0,0,0,0.80); 
 
-    cursor: pointer;
+    cursor: url('./src/Icons/Page/Cursor_click.png'),auto;
     transition: .2s all;
 }
 
@@ -187,7 +202,6 @@ li img{
     display: flex;
     height: 500px;
     max-width: 1500px;
-    
 }
 
 .card{
@@ -195,8 +209,9 @@ li img{
     box-shadow: -5px 8px 4px 2px rgba(0,0,0,0.20); 
     padding: 80px;
     width: 25%;
+    cursor: url('./src/Icons/Page/Cursor_click.png'),auto;
+
     transition: 0.4s all ease-in;
-    cursor: pointer;
 }
 
 .card a:hover{
@@ -246,6 +261,8 @@ li img{
     padding: 10px;
     margin-top: 50px;
     border-radius: 20px;
+    cursor: url('./src/Icons/Page/Cursor_click.png'),auto;
+
     transition: 0.2s all ease-in;
 }
 
@@ -282,6 +299,10 @@ li img{
     max-width: 500px;
 }
 
+.ways-card img{
+    cursor: url('./src/Icons/Page/Cursor_click_white.png'),auto;
+}
+
 /* ------------------------------------------ */
 /* FOOTER SECTION */
 /* ------------------------------------------ */
@@ -300,6 +321,10 @@ footer{
     max-width: 1500px;
     border-radius: 20px 20px 0 0;
     box-shadow: -5px 8px 0px 2px rgba(0,0,0,0.80); 
+}
+
+.footer-content img{
+    cursor: url('./src/Icons/Page/Cursor_click_white.png'),auto;
 }
 
 footer p {

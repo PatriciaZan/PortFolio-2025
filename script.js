@@ -87,3 +87,41 @@ function iconsLoad(type) {
 })
 
 }
+
+
+/*
+SCROLL INTO VIEW HEADER NAVIGATION
+*/
+
+const about = document.getElementById('a-about')
+const projects = document.getElementById('a-projects')
+const certificates = document.getElementById('a-certificates')
+const contact = document.getElementById('a-contact')
+
+
+about.addEventListener('click' , (e) => {
+    e.preventDefault()
+    scroll('about')
+})
+
+projects.addEventListener('click' , (e) => {
+    e.preventDefault()
+    scroll('projects')
+})
+
+certificates.addEventListener('click' , (e) => {
+    e.preventDefault()
+    scroll('certificates')
+})
+
+contact.addEventListener('click' , (e) => {
+    e.preventDefault()
+    scroll('contact')
+})
+
+function scroll(id){
+    document.getElementById(id).scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+    })
+}

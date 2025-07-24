@@ -1,17 +1,8 @@
-*, 
-*:after,
-*:before {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    list-style: none;
-}
-
 :root{
     --ff: "Kufam", sans-serif;
 
     --fS-title: 4em;
+    --FS-h2: 1.85em;
     --fS-paragraph: 1.5em;
     --FS-cards: 2.25em;
 
@@ -29,8 +20,14 @@
 }
 
 h2{
-    font-size: --;
+    font-size: var(--FS-h2);
 }
+
+.icon-image{
+    width: 80px;
+    margin-top: 40px;
+}
+
 
 .links-pages{
     font-weight: bold;
@@ -53,7 +50,10 @@ h2{
     display: flex;
     align-items: center;
     justify-content: center;
+}
 
+.pageTitle-container p {
+    margin: 0;
 }
 .projects-images{
     width: 500px;
