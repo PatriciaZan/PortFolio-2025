@@ -68,6 +68,7 @@ header{
     background-image: url(../src/Dot_Grid_Pattern.svg);
     border-bottom: 1px solid rgb(158, 158, 158);
     padding: 25px;
+    min-width: 700px;
     position: sticky;
     top: 0;
     z-index: 999;
@@ -79,4 +80,38 @@ nav{
     gap: 50px;
     font-weight: 300;
     font-size: 1.5em;
+}
+
+
+/* ------------------------------------------ */
+/* FOOTER SECTION */
+/* ------------------------------------------ */
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.footer-content{
+    background: var(--clr-background-item);
+    padding: 90px 0 20px 0;
+    width: 70%;
+    max-width: 1500px;
+    border-radius: 20px 20px 0 0;
+    box-shadow: -5px 8px 0px 2px rgba(0,0,0,0.80); 
+}
+
+.footer-content img{
+    cursor: url('./src/Icons/Page/Cursor_click_white.png'),auto;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1.25em;
+}
+
+footer img{
+    width: 50px;
 }

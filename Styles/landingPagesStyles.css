@@ -66,3 +66,12 @@ h2{
     margin: 100px;
     background-color: black;
 }
+
+
+@media (max-width: 1500px){
+    .projects-images-container{
+        width: 80%;
+        flex-direction: column;
+    }
+
+}

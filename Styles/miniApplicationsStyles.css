@@ -1,0 +1,9 @@
+
+/* Fats solution to stiky footer down */
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-self: flex-end;
+    min-height: 100vh;
+}

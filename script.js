@@ -52,21 +52,25 @@ iconsFront.forEach(url => {
 btnFrontend.addEventListener('click', (e) => {
     e.preventDefault()
     iconsLoad(iconsFront)
+    setColor(btnFrontend, '#6A5BF2')
 })
 
 btnBackend.addEventListener('click', (e) => {
     e.preventDefault()
     iconsLoad(iconsBack)
+    setColor(btnBackend, '#F25B85')
 })
 
 btnWorkFlow.addEventListener('click', (e) => {
     e.preventDefault()
     iconsLoad(iconsFlow)
+    setColor(btnWorkFlow, '#FF7E43')
 })
 
 btnWebDesign.addEventListener('click', (e) => {
     e.preventDefault()
     iconsLoad(iconsDesign)
+    setColor(btnWebDesign, '#8ABE11')
 })
 
 
@@ -85,7 +89,15 @@ function iconsLoad(type) {
     // ul.appendChild(li)
     return iconsContainer.appendChild(li)
 })
+}
 
+function setColor(btnId, color){
+    btnFrontend.style.backgroundColor = ''
+    btnBackend.style.backgroundColor = ''
+    btnWebDesign.style.backgroundColor = ''
+    btnWorkFlow.style.backgroundColor = ''
+
+    btnId.style.backgroundColor = color
 }
 
 
@@ -112,7 +124,7 @@ projects.addEventListener('click' , (e) => {
 certificates.addEventListener('click' , (e) => {
     e.preventDefault()
     scroll('certificates')
-})
+}) 
 
 contact.addEventListener('click' , (e) => {
     e.preventDefault()
