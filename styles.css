@@ -323,7 +323,7 @@ footer{
 
 .footer-content{
     background: var(--clr-background-item);
-    padding: 90px 0 20px 0;
+    padding: 40px 0 20px 0;
     width: 70%;
     max-width: 1500px;
     border-radius: 20px 20px 0 0;
@@ -350,7 +350,7 @@ footer img{
 
 @media (max-width: 1100px) {
     h1{
-        border: 1px solid red;
+        /* border: 1px solid red; */
     }
 
     .photo{
@@ -383,7 +383,7 @@ footer img{
 
 @media (max-width: 850px){
     h1{
-        border: 1px solid blue;
+        /* border: 1px solid blue; */
     }
 
     #aside-icons img{
